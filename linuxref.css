@@ -1,46 +1,3 @@
-h2 {
-  color: Azure;
-  background-color: DeepSkyBlue;
-  font-size: 50px;
-  text-align: center;
-  padding: 3px;
-  margin: 10px;
-}
-
-h1 {
-  color: Azure;
-  background-color: DeepSkyBlue;
-  font-size: 50px;
-  text-align: center;
-  padding: 10px;
-  margin: 0px;
-}
-
-.heading3 {
-  color: Azure;
-  background-color: DarkTurquoise;
-  font-family: "Arial Black", Gadget, sans-serif;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-}
-
-a {
-  color:lightseagreen;
-}
-
-a:visited {
-    color: magenta;
-}
-
-a:hover {
-    color: mediumpurple;
-}
-
-a:active {
-    color: orange;
-}
-
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -55,33 +12,6 @@ th {
   background-color: Silver;
   width: 50%;
 }
-
-.syntax {
-  color: DeepSkyBlue;
-  font-family: "Lucida Console", Monaco, monospace;
-}
-.example {
-  color: DodgerBlue;
-  font-family: "Arial Black", Gadget, sans-serif;
-}
-
-.hr
-{
- border-color: black;
-    background-color: DarkTurquoise;
-    height: 5px;
-    border-width: 2px;
-    border-radius: 25px;
-    width: 600px;
-    height: 4px;
-}
-
-
-
-
-
-
-
 
 
 
