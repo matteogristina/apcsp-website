@@ -9,11 +9,25 @@ tr {
 }
 
 th {
-  background-color: SteelBlue;
+  background-color: SkyBlue;
   width: 25%;
 }
 
+a {
+  color:lightseagreen;
+}
 
+a:visited {
+    color: magenta;
+}
+
+a:hover {
+    color: mediumpurple;
+}
+
+a:active {
+    color: orange;
+}
 
 
 
