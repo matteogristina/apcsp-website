@@ -1,18 +1,19 @@
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 15px;
-}
-
-tr {
-  background-color: WhiteSmoke;
-}
-
-th {
-  background-color: SteelBlue;
-  color: Azure;
-  width: 25%;
-}
+td {
+  		background-color: WhiteSmoke;
+        color: black;
+  		text-shadow: 5px 5px 10px Black;
+        -webkit-transition: width 2s, height 2s;
+        transition: width 2s, height 2s;
+		}
+    td:hover {
+    width: 300px;
+  	height: 300px;
+	}
+  	th {
+    	border-radius: 10px;
+  		color: white;
+  		background: linear-gradient(to bottom, #cc0099 0%, #6600ff 100%); 
+  		}
 
 a {
   color:lightseagreen;
