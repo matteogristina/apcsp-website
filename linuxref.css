@@ -1,6 +1,6 @@
-table, th, td
+th, td, table
 {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid DimGray;
 	border-collapse: collapse;
 }
 tr
