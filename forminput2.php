@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Area of Circle</title>
+    <title>Form Input 2</title>
   </head>
 
 
@@ -15,9 +15,9 @@
        $arg1 = $arg2 = $output = $retc = "";
 
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-         $smaller = test_input($_POST["smaller"]);
-         $larger = test_input($_POST["larger"]);
-         exec("~/dev/cdemo/areaOfCircle2.c" . $smaller . " " . $larger, $output, $retc); 
+         $arg1 = test_input($_POST["arg1"]);
+         $arg2 = test_input($_POST["arg2"]);
+         exec("/usr/lib/cgi-bin/sp1b/areaofcircle2 " . $arg1 . " " . $arg2, $output, $retc); 
        }
 
        function test_input($data) {
@@ -39,11 +39,11 @@
        // only display if return code is numeric - i.e. exec has been called
        if (is_numeric($retc)) {
          echo "<h2>Your Input:</h2>";
-         echo $smaller;
+         echo $arg1;
          echo "<br>";
-         echo $larger;
+         echo $arg2;
          echo "<br>";
- //what it will output      
+       
          echo "<h2>Program Output (an array):</h2>";
          foreach ($output as $line) {
            echo $line;

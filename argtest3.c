@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <math.h>
+
 float areaOfCircle(float radius) 
 {
   float area = (M_PI * radius * radius);
@@ -9,7 +12,6 @@ float areaOfCircle(float radius)
 //
 int main(int argc, char* argv[])
 {
-  float smaller, larger;
   // first check to see if two args (3 including program name) were entered 
   if (argc != 3)
   {
@@ -18,18 +20,18 @@ int main(int argc, char* argv[])
   }
 
   // at this point we know we have two args, let's check that they are ints
-  int arg1;
+ float smaller;
   // ssscanf scans a string for a format - in this case an integer (%f) and returns
   // the number of items found
-  int found = sscanf(argv[1], "%f", &arg1);
+  int found = sscanf(argv[1], "%f", &smaller);
   if (found != 1)
   {
     printf("first arg is not an integer, enter two ints\n");
     return 1;
   }
 
-  int arg2;
-  found = sscanf(argv[2], "%f", &arg2);
+  float larger;
+  found = sscanf(argv[2], "%f", &larger);
   if (found != 1)
   {
     printf("second arg is not an integer, enter two ints\n");
